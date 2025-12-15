@@ -163,10 +163,23 @@ npm run build:universal
 2. 复制并执行以下命令 (可能需要输入密码)：
 
 ```bash
-sudo xattr -rd com.apple.quarantine /Applications/Antigravity\ Tools.app
+sudo xattr -rd com.apple.quarantine "/Applications/Antigravity Tools.app"
 ```
 
 > 注意：请根据实际安装位置调整路径，如果安装在“应用程序”目录，通常就是上面的路径。
+
+## 📅 更新日志 (Changelog)
+
+### v2.1.0 (2025-12-15)
+- **🔥 OAuth 重构**:
+  - 修复端口冲突问题 (改为随机端口)。
+  - 新增 **"复制链接"** 功能，支持手动在浏览器完成验证。
+  - 新增 **"取消授权"** 按钮，支持主动释放资源。
+- **🎨 图标升级**:
+  - 全新设计的 macOS 风格圆角图标 (Squircle)。
+  - 优化托盘图标显示效果。
+  - 修复旧版 macOS 下图标显示过大的问题。
+- **📖 文档**: 新增常见问题 (FAQ) 指引。
 
 ## 👤 作者
 
